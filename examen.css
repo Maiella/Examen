@@ -1,0 +1,64 @@
+@keyframes bouger {
+    0% { transform: translateX(0);}
+    100% { transform: translateX(200px);}
+}
+h1{
+    animation: bouger 2s infinite alternate
+}
+
+button{
+    background-color: darkturquoise;
+    color: aqua;
+    padding: 10px 20px;
+    border: none;
+    transition: 5s;
+}
+button:hover{
+    background-color: blueviolet;
+    transform: scale(1.2);
+}
+
+
+.loader{
+    border: 2px dashed salmon;
+    border-top: 5px solid ;
+    border-radius: 100%;
+    width: 200px;
+    height: 200px;
+    animation: tourner 3s linear infinite;
+}
+@keyframes tourner{
+    0%{ transform: rotate(0deg);}
+    100%{ transform: rotate(360deg);}
+}
+
+
+.fade{
+    opacity: 0;
+    animation: apparition 5s forwards;
+}
+@keyframes apparition{
+    to{
+        opacity: 1;
+    }
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    background: darkorchid;
+    transition: transform 4s;    
+}
+.box:hover{
+    transform: rotate(360deg) scale(1.3);
+}
+
+img{
+    width: 200px;
+    animation: spin 10s linear infinite;
+}
+@keyframes spin{
+    100%{
+        transform: rotate(360deg);
+    }
+}
